@@ -52,7 +52,7 @@ function showSection(sectionId, activeButton) {
 /*** Dynamic Typing Effect ***/
 var typed = new Typed(".typedText", {
   strings: ["a Growth-Oriented Leader,", "a Business Analyst,", "a UI/UX Enthusiast,"],
-  typeSpeed: 100,
+  typeSpeed: 150,
   backSpeed: 80,
   backDelay: 2000,
   loop: true,
