@@ -20,12 +20,9 @@ window.onload = () => {
 
   // Show default section
   showSection("projectsSection", "workButton");
-
-  // Start typing effect for "Business Analyst"
-  setTimeout(typeChangingText, 1500);
 };
 
-// Show/Hide Sections Logic + Toggle Movement
+/*** Show/Hide Sections Logic + Toggle Movement ***/
 function showSection(sectionId, activeButton) {
   const sections = ["projectsSection", "aboutSection"];
   const toggleIndicator = document.getElementById("toggleIndicator");
