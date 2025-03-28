@@ -11,12 +11,12 @@ const sr = ScrollReveal({
 
 sr.reveal('.featured-text-card', { delay: 100 });
 
-sr.reveal('.featured-subtext', { delay: 250 });
+sr.reveal('.featured-subtext', { delay: 350 });
 
 
-sr.reveal('.featured-image', { delay: 250, origin: 'bottom', distance: '40px' });
+sr.reveal('.featured-image', { delay: 350, origin: 'bottom', distance: '40px' });
 
-sr.reveal('.featured-text-btn', { delay: 300 });
+sr.reveal('.featured-text-btn', { delay: 500 });
 
 sr.reveal('.project-box', { interval: 50 });
 
