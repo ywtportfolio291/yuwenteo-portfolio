@@ -9,15 +9,15 @@ const sr = ScrollReveal({
   once: true
 });
 
-sr.reveal('.featured-text-card', { delay: 200 });
+sr.reveal('.featured-text-card', { delay: 100 });
 
-sr.reveal('.featured-subtext', { delay: 300 });
+sr.reveal('.featured-subtext', { delay: 150 });
 
 
-sr.reveal('.featured-image', { delay: 300, origin: 'bottom', distance: '40px' });
+sr.reveal('.featured-image', { delay: 150, origin: 'bottom', distance: '40px' });
 
-sr.reveal('.featured-text-btn', { delay: 500 });
+sr.reveal('.featured-text-btn', { delay: 300 });
 
-sr.reveal('.project-box', { interval: 150 });
+sr.reveal('.project-box', { interval: 50 });
 
   
