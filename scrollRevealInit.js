@@ -9,15 +9,19 @@ const sr = ScrollReveal({
   once: true
 });
 
-sr.reveal('.featured-text-card', { delay: 100 });
+// ✅ Featured container – slight delay is okay
+sr.reveal('.featured-text-card', { delay: 200 });
 
-sr.reveal('.featured-subtext', { delay: 350 });
+// ✅ Subtext – faster reveal
+sr.reveal('.featured-subtext', { delay: 400 });
 
+// ✅ Floating images – no long wait
+sr.reveal('.featured-image', { delay: 300, origin: 'bottom', distance: '40px' });
 
-sr.reveal('.featured-image', { delay: 350, origin: 'bottom', distance: '40px' });
-
+// ✅ Scroll button – small touch, quick
 sr.reveal('.featured-text-btn', { delay: 500 });
 
-sr.reveal('.project-box', { interval: 50 });
+// ✅ Projects – reveal on scroll ASAP
+sr.reveal('.project-box', { interval: 150 });
 
   
