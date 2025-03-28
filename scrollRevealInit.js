@@ -22,6 +22,12 @@ sr.reveal('.featured-image', { delay: 300, origin: 'bottom', distance: '40px' })
 sr.reveal('.featured-text-btn', { delay: 500 });
 
 // ✅ Projects – reveal on scroll ASAP
-sr.reveal('.project-box', { interval: 150 });
+// ✅ Projects – appear together quickly
+sr.reveal('.project-box', {
+  origin: 'bottom',
+  duration: 500,
+  distance: '30px'
+});
+
 
   
