@@ -1,4 +1,4 @@
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   /*** Toggle Logic ***/
   const toggleIndicator = document.getElementById("toggleIndicator");
   const workButton = document.getElementById("workButton");
@@ -20,7 +20,7 @@ window.onload = () => {
 
   // Show default section
   showSection("projectsSection", "workButton");
-};
+});
 
 /*** Show/Hide Sections Logic + Toggle Movement ***/
 function showSection(sectionId, activeButton) {
