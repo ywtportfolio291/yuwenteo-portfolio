@@ -10,22 +10,22 @@ const sr = ScrollReveal({
 });
 
 // ✅ Featured container – slight delay is okay
-sr.reveal('.featured-text-card', { delay: 200 });
+sr.reveal('.featured-text-card', { delay: 300 });
 
 // ✅ Subtext – faster reveal
-sr.reveal('.featured-subtext', { delay: 400 });
+sr.reveal('.featured-subtext', { delay: 500 });
 
 // ✅ Floating images – no long wait
 sr.reveal('.featured-image', { delay: 300, origin: 'bottom', distance: '40px' });
 
 // ✅ Scroll button – small touch, quick
-sr.reveal('.featured-text-btn', { delay: 500 });
+sr.reveal('.featured-text-btn', { delay: 600 });
 
 // ✅ Projects – reveal on scroll ASAP
 // ✅ Projects – appear together quickly
 sr.reveal('.project-box', {
   origin: 'bottom',
-  duration: 500,
+  duration: 300,
   distance: '30px'
 });
 
