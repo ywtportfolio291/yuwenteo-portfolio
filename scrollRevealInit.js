@@ -1,32 +1,25 @@
-// scrollRevealInit.js
-
 const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 1000,
+  distance: '20px',
+  duration: 600,
+  easing: 'ease-in-out',
   reset: false,
-  viewFactor: 0.2,
+  viewFactor: 0.15,
   once: true
 });
 
-// ✅ Featured container – slight delay is okay
-sr.reveal('.featured-text-card', { delay: 300 });
+// Main hero section
+sr.reveal('.featured-text-card', { delay: 100 });
+sr.reveal('.featured-subtext', { delay: 300 });
+sr.reveal('.featured-image', { delay: 400, origin: 'bottom', distance: '30px' });
+sr.reveal('.featured-text-btn', { delay: 500 });
 
-// ✅ Subtext – faster reveal
-sr.reveal('.featured-subtext', { delay: 500 });
-
-// ✅ Floating images – no long wait
-sr.reveal('.featured-image', { delay: 300, origin: 'bottom', distance: '40px' });
-
-// ✅ Scroll button – small touch, quick
-sr.reveal('.featured-text-btn', { delay: 600 });
-
-// ✅ Projects – reveal on scroll ASAP
-// ✅ Projects – appear together quickly
+// Projects – fade in one by one (no jump)
 sr.reveal('.project-box', {
-  origin: 'bottom',
-  duration: 300,
-  distance: '30px'
+  opacity: 0,
+  duration: 400,
+  interval: 200,
+  distance: '0px',
+  easing: 'ease-in-out'
 });
 
 

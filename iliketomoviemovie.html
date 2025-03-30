@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema Scheduling Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .active-link {
+      font-weight: 600;
+      color: #1e3a8a; /* blue-900 */
+    }
+
+  </style>
+</head>
+<body class="bg-white text-gray-900 tracking-[-0.02em]">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-transparent flex items-center justify-between px-8 py-4">
+    <a href="index.html" class="text-lg font-semibold text-blue-700 hover:text-blue-900 transition-colors duration-300 tracking-[-0.02em]">
+      ← Back to Main Page
+    </a>
+
+    <div class="flex gap-6">
+      <a href="https://www.linkedin.com/in/teo-yu-wen-bb9573203/"
+         class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 flex items-center gap-1 tracking-[-0.02em]"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15l6-6m0 0h-4m4 0v4" />
+        </svg>
+      </a>
+
+      <a href="./assets/Teo Yu Wen Resume 2025 v2.pdf"
+         class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 flex items-center gap-1 tracking-[-0.02em]"
+         target="_blank" rel="noopener noreferrer">
+        Resume
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15l6-6m0 0h-4m4 0v4" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Banner (Bounded & Rounded like Elly Hsieh) -->
+<!-- Hero Banner with Lowered Image -->
+<div class="w-full px-6 md:px-8 flex justify-center mt-10">
+  <div class="w-full max-w-5xl rounded-2xl overflow-hidden shadow-md">
+    <img src="assets/Cinema Dashboard.png" alt="Cinema Game Banner" class="w-full object-cover" />
+  </div>
+</div>
+
+  <!-- Page Container -->
+  <div class="w-full px-6 md:px-8 flex justify-center">
+    <div class="max-w-screen-lg w-full flex mt-12">
+
+        <!-- Sidebar Navigation -->
+<aside class="hidden md:block w-48 pr-8 sticky top-20 self-start">
+    <nav class="space-y-4 text-gray-400 text-sm">
+      <a href="#overview" class="nav-link block hover:text-blue-900">Overview</a>
+      <a href="#challenge" class="nav-link block hover:text-blue-900">The Challenge</a>
+      <a href="#research" class="nav-link block hover:text-blue-900">User Insights</a>
+      <a href="#ideation" class="nav-link block hover:text-blue-900">Game Ideation</a>
+      <a href="#gameplay" class="nav-link block hover:text-blue-900">Gameplay</a>
+      <a href="#design-challenges" class="nav-link block hover:text-blue-900">Challenges</a>
+      <a href="#impact" class="nav-link block hover:text-blue-900">Learnings</a>
+
+    </nav>
+  </aside>
+  
+  <!-- Main Content -->
+  <section class="flex-1 space-y-16">
+    <!-- Overview -->
+<div id="overview">
+    <p class="text-gray-500 text-sm font-medium tracking-[-0.02em]">✴ '23, SUTD × MSO & ESA</p>
+    <h1 class="text-3xl md:text-4xl font-bold mt-1 text-blue-900 tracking-[-0.02em]">
+      I Like to Movie Movie! — Cinema Scheduling Simulation Game
+    </h1>
+  
+    <p class="mt-4 text-gray-700 text-lg tracking-[-0.02em]">
+        I led the product design process for a multi-month project to develop an interactive cinema scheduling game. Our mission was to challenge players by simulating the intricacies of real-world cinema operations—helping them hone their strategic decision-making skills and adaptability to changing audience preferences. 
+    </p>
+  
+    <!-- 3-Column Summary Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <!-- Key Results -->
+      <div>
+        <h2 class="font-semibold text-lg text-blue-900 mb-2 tracking-[-0.02em]">Educational Concepts</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 tracking-[-0.02em]">
+          <li>Demand Forecasting and Modeling</li>
+          <li>Revenue Management</li>
+          <li>Overage/Underage Problem</li>
+        </ul>
+      </div>
+  
+      <!-- Role & Timeline -->
+      <div>
+        <h2 class="font-semibold text-lg text-blue-900 mb-2 tracking-[-0.02em]">Role & Timeline</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 tracking-[-0.02em]">
+          <li>Product Designer & Developer Support</li>
+          <li>January 2023 – May 2023</li>
+        </ul>
+      </div>
+  
+      <!-- Methods -->
+      <div>
+        <h2 class="font-semibold text-lg text-blue-900 mb-2 tracking-[-0.02em]">Methods</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 tracking-[-0.02em]">
+          <li>Industry Analysis</li>
+          <li>Persona Building / Affinity Diagram </li>
+          <li>UI Prototyping / Drag-and-Drop Simulation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Video Embed -->
+<div class="mt-12">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4 tracking-[-0.02em]">Game Demo</h2>
+    <div class="w-full max-w-5xl mx-auto rounded-xl overflow-hidden">
+        <div class="aspect-video">
+          <iframe 
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/9pK4iVF_Ejc" 
+            title="Cinema Scheduling Game Demo"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Challenge -->
+<div id="challenge" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4 tracking-[-0.02em]">The Challenge</h2>
+  
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+        Movie exhibitors face a complex puzzle: deciding which films to screen, how often, and at what times.
+        This is known as the <strong>Movie Scheduling Problem (MSP)</strong>—a task made more complicated by:
+      </p>
+      
+      <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em] mb-6">
+        <li><strong>Varying Demand</strong> — weekends vs. weekdays require different strategies</li>
+        <li><strong>Film Runtimes & Cleaning Intervals</strong> — precise timing is needed to avoid overlaps</li>
+        <li><strong>Rental Costs & Profit Margins</strong> — balancing cost vs. audience draw</li>
+        <li><strong>Hall Capacity Constraints</strong> — every seat counts toward profitability</li>
+      </ul>
+      
+      <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+        To make these challenges interactive and teachable, we distilled the Movie Scheduling Problem into five core constraints—each directly modeled in the game:
+      </p>
+      
+      <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em] mb-6">
+        <li><strong>Hall Capacity</strong> — each hall has a fixed number of seats</li>
+        <li><strong>Dynamic Demand</strong> — audience interest shifts by time of day and movie freshness</li>
+        <li><strong>Runtimes & Cleaning Buffers</strong> — schedules must account for turnover time</li>
+        <li><strong>Rental Costs vs. Revenue</strong> — films incur fixed costs that cut into profits</li>
+        <li><strong>Overage / Underage Risk</strong> — over- or under-scheduling leads to missed revenue</li>
+      </ul>
+      
+      <p class="text-lg text-gray-700 tracking-[-0.02em]">
+        Instead of relying on complex optimization algorithms, we designed a game that <strong>visualizes the real-world trade-offs of scheduling</strong>. Players learn through intuitive decision-making and live feedback—not formulas—by testing strategies in a risk-free, interactive simulation.
+      </p>      
+  </div>
+  
+  
+    <!-- Design Discovery -->
+<div id="research" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-6 tracking-[-0.02em]">Design Discovery</h2>
+  
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      With the Movie Scheduling Problem broken down into core mechanics, the next step was understanding 
+      <strong>who we were designing for</strong> — and what kind of game experience would best support learning and decision-making.
+    </p>
+  
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      We conducted interviews with a diverse group of stakeholders across the cinema ecosystem, including:
+    </p>
+  
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em] mb-6">
+      <li>Cinema managers</li>
+      <li>Cleaning and operations staff</li>
+      <li>Indie filmmakers</li>
+      <li>Business stakeholders (e.g., brand sponsors and executives)</li>
+    </ul>
+  
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      These conversations helped us shape four representative personas — each capturing a unique mix of 
+      influence, interest, and learning motivation.
+    </p>
+    <div class="flex justify-center my-4">
+        <img src="assets\User Characteristics.png" alt="Gameplay Concept Sketch" class="rounded-lg shadow-md max-w-3xl w-full" />
+      </div>
+      <p class="text-sm text-gray-500 italic text-center mb-8">
+        Power-influence matrix
+      </p>
+  
+    <!-- What Users Wanted -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">What Users Wanted</h3>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em] mb-6">
+      <li><strong>High-interest learners</strong> wanted a hands-on simulation to teach scheduling without technical knowledge.</li>
+      <li><strong>Operational staff</strong> valued realism — especially around cleaning and turnover logistics.</li>
+      <li><strong>Newcomers</strong> needed gentle onboarding and clear in-game guidance.</li>
+      <li><strong>Decision-makers</strong> preferred short, engaging sessions with meaningful takeaways.</li>
+    </ul>
+  
+    <!-- Survey & Market Insights -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">Survey & Market Insights</h3>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      To validate our design direction, we conducted surveys and benchmarked existing simulation games.
+      From this, we identified three pillars of effective learning-through-play:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em] mb-6">
+      <li><strong>Intuitive</strong> — Clear, easy-to-navigate interface</li>
+      <li><strong>Educational</strong> — Feedback systems that help players reflect and improve</li>
+      <li><strong>Entertaining</strong> — Gameplay that engages without sacrificing strategy</li>
+    </ul>
+  
+    <!-- How It Shaped the Game -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">How It Shaped the Game</h3>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      These insights directly informed the gameplay experience:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em]">
+      <li>Drag-and-drop interface to simplify scheduling interactions</li>
+      <li>Real-time visual summaries to help players learn from decisions</li>
+      <li>Adjustable difficulty levels for different user types</li>
+      <li>UI patterns modeled after real-world cinema workflows</li>
+    </ul>
+  </div>  
+  
+    <!-- Game Ideation -->
+<div id="ideation" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4 tracking-[-0.02em]">Game Ideation</h2>
+  
+    <!-- Concept Sketch Video -->
+    <div class="flex justify-center mb-6">
+      <video class="rounded-lg shadow-md w-full max-w-4xl" controls>
+        <source src="assets/conceptsketch video.mp4" type="video/mp4" />
+      </video>
+    </div>
+  
+    <!-- Initial Prototype -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">Initial Prototype</h3>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      Our first build featured a drag-and-drop scheduling prototype. Players were tasked with assigning films to available time slots across cinema halls, with a movie list anchored at the bottom of the screen — a familiar layout inspired by casual games. At the end of the game, there will be a customer feedback module and a summarized performance of the player's revenue and demand of each movie.
+    </p>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      However, through internal testing and feedback from our professor, two key usability issues emerged:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 tracking-[-0.02em] mb-6">
+      <li>The bottom-anchored movie list caused excessive cursor movement and made it harder to cross-reference hall availability and time slots.</li>
+      <li>The customer feedback module, while visually engaging, lacked strategic value and felt redundant.</li>
+    </ul>
+  
+    <!-- Pivot: UI Redesign -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">Pivot: From Playful to Purposeful</h3>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+        Based on this feedback, we made two core refinements:
+    </p>
+  
+    <ul class="list-none text-gray-700 text-lg space-y-10 tracking-[-0.02em] mb-4">
+      <!-- UI Layout Video -->
+      <li>
+        <div class="flex flex-col items-center space-y-6">
+          <div class="w-full max-w-5xl">
+            <video
+              src="assets/ui-before-after.mp4"
+              controls
+              class="rounded-lg shadow-md w-full h-auto"
+              poster="assets/ui-before.png"
+            ></video>
+          </div>
+          <p class="text-lg text-gray-700 tracking-[-0.02em] max-w-5xl text-left">
+            <strong>Sidebar Redesign:</strong> Shifted the movie selection panel to the left  side, streamlining user interactions and improving visibility.
+        </div>
+      </li>
+  
+      <!-- Summary Feedback Video -->
+      <li>
+        <div class="flex flex-col items-center space-y-6">
+          <div class="w-full max-w-5xl">
+            <video
+              src="assets/summary-before-after.mp4"
+              controls
+              class="rounded-lg shadow-md w-full h-auto"
+              poster="assets/Summary-page.png"
+            ></video>
+          </div>
+          <p class="text-lg text-gray-700 tracking-[-0.02em] max-w-5xl text-left">
+            <strong>Strategic Dashboard:</strong> Replaced the generic customer feedback module with a robust statistics dashboard. Players could now review real demand, profit margins, rental costs, and day-over-day trends—encouraging reflection and informed planning.
+          </p>
+        </div>
+      </li>
+    </ul>
+      <!-- Concept Sketch Image -->
+<div class="flex justify-center my-4">
+    <img src="assets/Concept Png.png" alt="Gameplay Concept Sketch" class="rounded-lg shadow-md max-w-3xl w-full" />
+  </div>
+  <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+    Final Game Layout
+  </p>
+  </div>  
+  
+    <!-- Gameplay & Simulation Logic -->
+<div id="gameplay" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-6 tracking-[-0.02em]">Gameplay & Simulation Logic</h2>
+  
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-6">
+      The core gameplay loop mirrors the real-world challenges of cinema scheduling. It incorporates operational constraints, financial trade-offs, and a structured 14-day simulation cycle.
+      <br><br> This section provides a structured overview of how the game functions — from login to leaderboard — and explains how each system supports strategic thinking and learning through play. 
+    </p>
+  
+  
+  
+    <!-- 1. Login & Onboarding Flow -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">1. Login & Onboarding Flow</h3>
+    <!-- 🎥 Login Flow Video -->
+<div class="flex justify-center mb-6">
+    <video src="assets/login.mp4" controls class="rounded-lg shadow-md w-full max-w-4xl" poster="assets\login-poster.png">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+    Walkthrough of the login and onboarding flow — from user registration to gameplay entry.
+  </p>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      Players begin by registering or logging into the game. The system offers two paths:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-4">
+      <li><strong>Register:</strong> Generate a username and create a password</li>
+      <li><strong>Login:</strong> Enter previously saved credentials</li>
+    </ul>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      After a successful login, players can choose to either:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-6">
+      <li>Run a short tutorial to understand game mechanics</li>
+      <li>Jump straight into gameplay</li>
+    </ul>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+        This step ensures accessibility for first-time users while allowing experienced players to skip ahead.
+      </p>
+      
+      <details class="mb-8">
+        <summary class="text-sm text-blue-800 font-medium cursor-pointer hover:underline">
+         Click here to view the login/register subsystem.
+        </summary>
+        <div class="flex justify-center my-6">
+          <img src="assets/Login_register flowcharts (2).png" alt="Login/Register Subsystem Flowchart" class="rounded-lg shadow-md max-w-3xl w-full mt-4" />
+        </div>
+        <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em]">
+          Flowchart: Illustrates user registration, password handling, and session creation.
+        </p>
+      </details>
+  
+    <!-- 2. Initial Conditions Setup -->
+<h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">2. Initial Conditions Setup</h3>
+
+<p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+  Once the player clicks “Start Game,” the system initializes the conditions needed for Day 1 of the simulation. The setup mimics how a real cinema operator would start their scheduling day — with a clear view of resources and constraints.
+</p>
+
+<div class="flex justify-center my-6">
+    <img src="assets/first-look-cinema.png" alt="First look at the cinema interface" class="rounded-lg shadow-md w-full max-w-4xl" />
+  </div>
+  <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+    First look at the main scheduling interface — featuring the drag-and-drop movie grid and live feedback panel.
+  </p>
+
+<ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-6">
+  <li><strong>Cash Balance:</strong> Every player starts with a fixed amount — $10,000 — which they’ll use to pay movie rental costs.</li>
+  <li><strong>Day Counter:</strong> Set to Day 1 of a 14-day simulation.</li>
+  <li><strong>Movie List:</strong> Pulled from the database, including genre, runtime, popularity, and how many days the movie has been in circulation.</li>
+  <li><strong>Scheduling Grid:</strong> A blank planner that mirrors a cinema layout — 4 halls, each broken down into 10-minute slots across the operating day.</li>
+</ul>
+
+<p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+  On the frontend, players see their username and cash in the header, a list of movies on the left, and the blank schedule in the center — ready for drag-and-drop planning.
+</p>
+
+<!-- Expandable Flowchart: Initial Conditions Subsystem -->
+<details class="mb-8">
+    <summary class="text-sm text-blue-800 font-medium cursor-pointer hover:underline">
+      Click here to view how initial conditions are configured
+    </summary>
+    <div class="flex justify-center my-6">
+      <img src="assets/initial conditions flowchart (2).png" alt="Initial Conditions Subsystem" class="rounded-lg shadow-md max-w-3xl w-full mt-4" />
+    </div>
+    <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em]">
+      Initial conditions are preloaded to reflect a realistic starting point for cinema managers.
+    </p>
+  </details>
+
+    <!-- 3. 14-Day Simulation Loop -->
+<h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">3. 14-Day Simulation Loop</h3>
+
+<p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+  The core gameplay unfolds across a 14-day in-game cycle. Players drag and drop films onto the scheduling grid,
+  while the system injects realistic cinema constraints like ad buffers and cleaning times.
+</p>
+
+<div class="flex justify-center mb-6">
+    <video src="assets\drag-drop.mp4" controls class="rounded-lg shadow-md w-full max-w-4xl" poster="assets/first-look-cinema.png">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+    Drag-and-Drop functionality across all 4 cinema halls
+  </p>
+
+<ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-6">
+  <li><strong>Drag-and-Drop Scheduling:</strong> Players build each day’s lineup by placing films into grid slots.</li>
+  <li><strong>Conflict Detection:</strong> The system checks for overlapping times and prevents scheduling errors.</li>
+  <li><strong>Operational Buffers:</strong> Ads and cleaning intervals are automatically slotted in to simulate real cinema workflows.</li>
+  <li><strong>End-of-Day Summary:</strong> Reports show ad revenue, ticket revenue, rental costs, and net profits — giving players direct feedback.</li>
+</ul>
+
+<!-- Expandable Flowchart: Gameplay Subsystem -->
+<details class="mb-8">
+    <summary class="text-sm text-blue-800 font-medium cursor-pointer hover:underline">
+      Click here to explore the system behind scheduling and profits.
+    </summary>
+    <div class="flex justify-center my-6">
+      <img src="assets/game flowchart (2).png" alt="Gameplay Flowchart" class="rounded-lg shadow-md max-w-5xl w-full mt-4" />
+    </div>
+    <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em]">
+      This flowchart visualizes the behind-the-scenes logic — from placing a movie to calculating ticket sales and profit.
+    </p>
+  </details>
+  
+
+    <!-- 4. Embedded Strategic Mechanics -->
+    <h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">4. Embedded Strategic Mechanics</h3>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      As players progress, dynamic systems introduce challenges and deepen strategy:
+    </p>
+    <div class="flex justify-center mb-6">
+        <video src="assets\scenarioes.mp4" controls class="rounded-lg shadow-md w-full max-w-4xl" poster="assets\scenarioes-poster.png">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+        Different scenarioes - weekends/holidays that lead to different ticket prices and surge in movie demand
+      </p>
+
+    <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-6">
+      <li><strong>Variable Rental Costs:</strong> Genre, runtime, popularity influence cost</li>
+      <li><strong>Dynamic Ticket Pricing:</strong> Weekends/holidays offer higher revenue</li>
+      <li><strong>Limited Film Availability:</strong> Films expire over time, adding urgency</li>
+    </ul>
+  
+    <!-- 5. Strategic Pacing & Game Completion -->
+<h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">5. Strategic Pacing & Game Completion</h3>
+
+<video class="w-full rounded-2xl shadow mb-6" controls poster="assets/movie-stats-poster.png">
+  <source src="assets/movie-utilisation.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+  We structured the simulation as a 14-day cycle to avoid fatigue while balancing engagement and learning. This timeframe allows players to:
+</p>
+<ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-6">
+  <li>Test different scheduling strategies across weekdays, weekends, and holidays</li>
+  <li>Adapt to shifting movie availability and performance feedback in real time</li>
+  <li>Reflect and improve using hall utilization and movie-specific data visualizations</li>
+</ul>
+
+
+    <div class="flex justify-center my-6">
+        <img src="assets\final-results-game.png" alt="Game Leaderboard" class="rounded-lg shadow-md max-w-5xl w-full mt-4" />
+      </div> 
+      <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+       Final results after 14 days of gameplay
+      </p>
+
+    <div class="flex justify-center my-6">
+        <img src="assets\game-leaderboard.png" alt="Game Leaderboard" class="rounded-lg shadow-md max-w-5xl w-full mt-4" />
+      </div> 
+      <p class="text-sm text-center text-gray-500 italic tracking-[-0.02em] mb-6">
+        Leaderboard
+       </p>
+
+
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+      On Day 14, the simulation ends with a leaderboard highlighting cumulative profit and performance, encouraging players to iterate and replay.
+    </p>
+  
+    <!-- Summary -->
+    <p class="text-lg text-gray-700 tracking-[-0.02em]">
+      By integrating intuitive interactions, financial logic, and adaptive mechanics, our game delivers an experience that is both educational and engaging. Each subsystem — from login to the statistical dashboard — reinforces strategic thinking in cinema scheduling.
+    </p>
+  </div>
+  
+    <!-- Design Challenges -->
+<div id="design-challenges" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4 tracking-[-0.02em]">Challenges</h2>
+    <p class="text-lg text-gray-700 tracking-[-0.02em]">
+      One of the key challenges I tackled was maintaining layout stability as our drag-and-drop interface evolved. Frequent UI changes introduced styling issues like misalignment and element overlap.
+      <br><br>
+      I addressed this by restructuring our CSS using modular utility classes, a grid-based layout system, and scalable spacing variables. This not only improved maintainability but also ensured consistent behavior across different screen sizes and browsers.
+      <br><br>
+      The result was a cleaner, more responsive interface that enhanced usability — especially during intensive interactions like film scheduling across multiple halls.
+    </p>
+  </div>
+  
+  
+    <div id="impact">
+      <!-- Personal Learning: Game Ideation -->
+<h3 class="text-xl font-semibold text-blue-900 mb-2 tracking-[-0.02em]">Design Iteration & Problem Focus</h3>
+
+<p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+  Early in the design process, I explored a range of game ideas related to cinema operations, including:
+</p>
+
+  <!-- Cinema Queue Rush -->
+  <div class="mb-6">
+    <div class="flex justify-center mb-4">
+      <img src="assets/Concept Sketch 2.png" alt="Cinema Queue Rush Sketch" class="rounded-lg shadow-md max-w-3xl w-full" />
+    </div>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-2"><strong>Cinema Queue Rush:</strong> A fast-paced ticketing game where players manage queues and seating in real time. This prototype tested mechanics around time pressure, customer flow, and bottlenecks.</p>
+  </div>
+
+  <!-- Cinema Deal -->
+  <div class="mb-6">
+    <div class="flex justify-center mb-4">
+      <img src="assets/Concept Sketch 3.png" alt="Cinema Deal Sketch" class="rounded-lg shadow-md max-w-3xl w-full" />
+    </div>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-2"><strong>Cinema Deal:</strong> A card-based strategy game centered on acquiring film IPs and negotiating revenue shares. It explored profitability models and long-term planning under uncertainty.</p>
+  </div>
+
+  <!-- Cinema Board Game -->
+  <div class="mb-6">
+    <div class="flex justify-center mb-4">
+      <img src="assets/Concept Sketch 1.png" alt="Cinema Board Game Sketch" class="rounded-lg shadow-md max-w-3xl w-full" />
+    </div>
+    <p class="text-lg text-gray-700 tracking-[-0.02em] mb-2"><strong>Cinema Tycoon (Board Game):</strong> A spin-based multiplayer game that challenged players to collect cinema halls, buy upgrades, and sabotage opponents. While it was engaging, the mechanics didn’t directly reinforce movie scheduling trade-offs.</p>
+  </div>
+
+  <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+    Although these ideas offered interesting gameplay, they didn’t fully address the <strong>Movie Scheduling Problem (MSP)</strong>—our core challenge. Through reflection and feedback, I pivoted toward a more focused simulation experience.
+  </p>
+
+  <p class="text-lg text-gray-700 tracking-[-0.02em] mb-4">
+    This design pivot taught me to:
+  </p>
+
+  <ul class="list-disc list-inside text-gray-700 text-lg space-y-2 mb-4">
+    <li><strong>Frame a clear problem early</strong> — to guide design decisions and avoid feature creep</li>
+    <li><strong>Recognize when to diverge vs. converge</strong> — balancing creative exploration with delivery focus</li>
+    <li><strong>Let go of fun ideas that don’t serve the mission</strong> — even if they’re well-developed</li>
+  </ul>
+
+  <p class="text-lg text-gray-700 tracking-[-0.02em] mb-6">
+    Narrowing the scope ultimately helped me design a more cohesive, educational, and strategically aligned experience. One that teaches players how to make smarter scheduling decisions in a simulated cinema setting.
+  </p>
+</div>
+
+<!-- More Case Studies and Writings -->
+<div class="mt-20">
+  <h2 class="text-2xl font-semibold text-blue-900 mb-6 tracking-[-0.02em]">✴ More projects</h2>
+  <hr class="border-t border-gray-200 mb-10" />
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Case Study 1 -->
+    <a href="sutdetect.html" class="group block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="assets/Contractbook PDF.png" alt="Contractbook PDF Signing" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">SUTDetect ・ '25 HTX</h3>
+        <p class="text-gray-600 text-sm"> Revolutionizing investigations with AI-powered eye-tracking for contactless object familiarity detection</p>
+      </div>
+    </a>
+
+    <!-- Case Study 2 -->
+    <a href="routeoptiyeos.html" class="group block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="assets\yeos-final-ppt.jpg" alt="Usability Testing" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">Yeo's Vending Machine Route Optimisation</h3>
+        <p class="text-gray-600 text-sm">From snacks to stats: Using data and Power BI to rethink operational logistics</p>
+      </div>
+    </a>
+
+    <!-- Case Study 3 -->
+    <a href="job-hunt-journey.html" class="group block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="assets/6-month-jobhunt.png" alt="Job Hunt Journey" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">My 6-Month Tech Job Hunt Journey</h3>
+        <p class="text-gray-600 text-sm">A transparent look into applications, interviews, rejections, and the lessons I learned.</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<script src="movie-proj-motion.js"></script>
+</body>
+</html>
+
+  

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yeo’s Vending Route Optimisation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .active-link {
+      font-weight: 600;
+      color: #1e3a8a; /* blue-900 */
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 tracking-[-0.02em]">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-transparent flex items-center justify-between px-8 py-4">
+    <a href="index.html" class="text-lg font-semibold text-blue-700 hover:text-blue-900 transition-colors duration-300 tracking-[-0.02em]">
+      ← Back to Main Page
+    </a>
+
+    <div class="flex gap-6">
+      <a href="https://www.linkedin.com/in/teo-yu-wen-bb9573203/"
+         class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 flex items-center gap-1 tracking-[-0.02em]"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15l6-6m0 0h-4m4 0v4" />
+        </svg>
+      </a>
+
+      <a href="./assets/Teo Yu Wen Resume 2025 v2.pdf"
+         class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 flex items-center gap-1 tracking-[-0.02em]"
+         target="_blank" rel="noopener noreferrer">
+        Resume
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15l6-6m0 0h-4m4 0v4" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="w-full h-80 bg-gradient-to-r from-green-200 via-yellow-100 to-green-200 flex items-center justify-center">
+    <span class="text-xl text-gray-500">[ Insert Hero Image or Banner ]</span>
+  </div>
+
+  <!-- Page Layout -->
+  <div class="w-full px-6 md:px-8 flex justify-center">
+    <div class="max-w-screen-lg w-full flex mt-12">
+
+      <!-- Sidebar Navigation -->
+      <aside class="hidden md:block w-48 pr-8 sticky top-20 self-start">
+        <nav class="space-y-4 text-gray-400 text-sm">
+          <a href="#overview" class="nav-link block hover:text-blue-900">Overview</a>
+          <a href="#challenge" class="nav-link block hover:text-blue-900">The Challenge</a>
+          <a href="#research" class="nav-link block hover:text-blue-900">User Insights</a>
+          <a href="#powerbi" class="nav-link block hover:text-blue-900">Power BI Dashboard</a>
+          <a href="#scheduling" class="nav-link block hover:text-blue-900">Schedule Generator</a>
+          <a href="#challenges" class="nav-link block hover:text-blue-900">Impact</a>
+          <a href="#learnings" class="nav-link block hover:text-blue-900">Learnings </a>
+          <a href="#learnings" class="nav-link block hover:text-blue-900">Future Work</a>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <section class="flex-1 space-y-20">
+        
+        <!-- Overview -->
+        <div id="overview">
+          <p class="text-gray-500 text-sm font-medium">✴ '23, From snacks to stats: Using data and Power BI to rethink operational logistics</p>
+          <h1 class="text-xl md:text-4xl font-bold mt-1 text-blue-900">Vending Machine Route Optimisation for Yeo’s Pte Ltd</h1>
+          <p class="mt-4 text-lg text-gray-700">
+            I was the Power BI Developer in a cross-functional team tasked with improving operational efficiency for a local vending machine distributor. Through iterative dashboard development and biweekly client review meetings, I focused on turning raw data into user-friendly visuals that informed smarter scheduling decisions and cost reductions.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div>
+              <h2 class="font-semibold text-lg text-blue-900 mb-2">Key Deliverables</h2>
+              <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Power BI Route Optimization Dashboard</li>
+                <li>Schedule Generator</li>
+                <li>Operational Efficiency Metrics</li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="font-semibold text-lg text-blue-900 mb-2">Role & Timeline</h2>
+              <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Power BI Developer / Data Analyst</li>
+                <li>January 2023 – May 2023</li>
+                <li>Biweekly Stakeholder Meetings</li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="font-semibold text-lg text-blue-900 mb-2">Methods</h2>
+              <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Python / R</li>
+                <li>Power BI / Google Maps API</li>
+                <li>Cluster Analysis / Linear Programming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Challenge -->
+        <div id="challenge">
+          <h2 class="text-2xl font-semibold text-blue-900 mb-4">The Challenge</h2>
+          <img src="assets\yeos-vending-machine.jpg" alt="Yeo's Vending Machine Drinks" class="rounded-xl shadow-md w-full max-w-3xl mx-auto mb-6">
+  <p class="text-sm text-gray-500 italic text-center mb-8">
+    A look at the vending machines at the heart of Yeo’s nationwide servicing operations.
+  </p>
+          <p class="text-lg text-gray-700 mb-4">
+            Yeo’s operates over 1000 vending machines across Singapore, divided into refill and sales collection routes managed by individual servicemen. These routes were built organically over time, based on familiarity rather than logic, resulting in:          </p>
+          <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-4">
+            <li>Uneven workload distribution across servicemen</li>
+            <li>No standardised scheduling system to guide sales collection</li>
+            <li>High operational costs from inefficiencies</li>
+          </ul>
+          <p class="text-lg text-gray-700">
+            We set  out to answer: “How might we use data to optimise route assignments, structure collection schedules, and surface operational insights — without depending on costly logistics-specific platforms?”
+          </p>
+        </div>
+
+        <!-- User Insights -->
+<div id="research">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">User Insights</h2>
+    <div class="mt-12 max-w-3xl w-full">
+        <img src="assets/yeos-stakeholder-analysis.jpg" alt="Field visit with Yeo’s serviceman" class="rounded-xl shadow-md w-full mb-4">
+        <p class="text-sm text-gray-500 italic text-center mb-8">
+          Our team during a field visit with one of Yeo’s servicemen — a key part of our stakeholder immersion process.
+        </p>
+      </div>
+    <p class="text-lg text-gray-700 mb-4">
+        We began by speaking with Yeo’s operations lead and shadowing a few servicemen in the field to understand their current routing practices and pain points.
+      </p>
+    
+      <p class="text-lg text-gray-700 mb-4">
+        These conversations revealed four key insights:
+      </p>
+  
+      <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+        <table class="min-w-full text-left text-gray-700 text-md">
+          <!-- Beautified Header -->
+          <thead class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 text-blue-900 uppercase tracking-wider text-sm">
+            <tr>
+              <th class="px-6 py-4 border-b border-blue-200 rounded-tl-xl">Insight</th>
+              <th class="px-6 py-4 border-b border-blue-200 rounded-tr-xl">What We Learned</th>
+            </tr>
+          </thead>
+      
+          <!-- Table Body with Vertical Divider -->
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-gray-200">
+                Servicemen planned their routes manually each day
+              </td>
+              <td class="px-6 py-4">
+                Servicemen followed routes based on experience and habit, leading to inconsistent refill patterns and imbalanced coverage
+              </td>
+            </tr>
+      
+      
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-gray-200">
+                Unequal workloads led to fatigue and inefficiency
+              </td>
+              <td class="px-6 py-4">
+                Some servicemen were assigned nearly twice the number of machines as others.
+              </td>
+            </tr>
+      
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-gray-200">
+                Lack of visibility for stakeholders
+              </td>
+              <td class="px-6 py-4">
+                Performance tracking existed only in Excel spreadsheets — limiting operational oversight.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-16">
+        <h2 class="text-2xl font-semibold text-blue-900 mb-4">Our Approach</h2>
+      
+        <p class="text-lg text-gray-700 mb-4">
+          These findings shaped our direction: rather than automating everything, we focused on building tools that support both frontline staff and operational decision-makers.
+        </p>
+      
+        <p class="text-lg text-gray-700 mb-4">
+          We developed two complementary systems:
+        </p>
+      
+        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-4">
+          <li><strong>Power BI Dashboard</strong> – to visualise sales, servicing effort, and cluster performance</li>
+          <li><strong>Scheduling Engine</strong> – to generate practical, workload-aware servicing plans</li>
+        </ul>
+      
+        <p class="text-lg text-gray-700">
+          Together, these solutions aimed to reduce inefficiencies while respecting the servicemen’s on-ground experience.
+        </p>
+      </div>
+    </div>
+
+    <!-- Power BI Dashboard -->
+<div id="powerbi" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">Power BI Dashboard</h2>
+  
+    <p class="text-lg text-gray-700 mb-4">
+      The original goal for this dashboard was to help senior management understand overall vending machine sales performance in 2022 — with a focus on revenue trends and sales per route.
+    </p>
+  
+    <p class="text-lg text-gray-700 mb-4">
+      However, we saw an opportunity to go further.
+    </p>
+  
+    <h3 class="text-lg font-semibold text-blue-800 mb-2">Elevating the Scope</h3>
+    <p class="text-lg text-gray-700 mb-4">
+      Rather than stopping at descriptive analytics, we expanded the dashboard into a strategic planning tool by integrating:
+    </p>
+  
+    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-4">
+      <li><strong>Route comparisons</strong> between legacy and optimised clusters</li>
+      <li><strong>Cost-to-time efficiency analysis</strong>, combining sales data with travel and scheduling factors</li>
+      <li><strong>ROI analysis</strong>, highlighting machines with low returns relative to servicing effort (time & operational cost)</li>
+    </ul>
+  
+    <p class="text-lg text-gray-700">
+      This shift turned the dashboard from a static report into an interactive decision-support system — one that could answer not just <em>“What happened?”</em> but also <em>“What should we do next?”</em>
+    </p>
+  
+    <!-- Implementation Section -->
+    <div class="mt-16">
+      <h2 class="text-2xl font-semibold text-blue-900 mb-4">Implementation: Power BI Dashboard</h2>
+  
+      <p class="text-lg text-gray-700 mb-6">
+        I designed a consolidated Power BI dashboard that allowed Yeo’s stakeholders to explore vending machine performance across multiple dimensions — all within a single, interactive interface, without the need to switch between pages.
+      </p> 
+  
+      <!-- Dashboard Carousel -->
+      <div class="relative w-full max-w-3xl mx-auto mt-8">
+        <!-- Slides Container -->
+        <div id="carousel-slides" class="relative overflow-hidden rounded-xl shadow-md">
+          <div class="flex transition-transform duration-500" style="transform: translateX(0%)">
+            <!-- Slide 1 -->
+            <img src="assets/yeos-PowerBI.png" class="w-full flex-shrink-0" alt="Dashboard Slide 1">
+            <!-- Slide 2 -->
+            <img src="assets/yeos-PowerBI-2.png" class="w-full flex-shrink-0" alt="Dashboard Slide 2">
+          </div>
+        </div>
+  
+        <!-- Left/Right Arrows -->
+        <button onclick="prevSlide()" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 px-3 py-2 rounded-r shadow-md">
+          ←
+        </button>
+        <button onclick="nextSlide()" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 px-3 py-2 rounded-l shadow-md">
+          →
+        </button>
+  
+        <!-- Dynamic Caption -->
+        <p id="carousel-caption" class="text-sm text-gray-500 italic text-center mt-4">
+          General Route Dashboard — confidential material has been censored.
+        </p>
+      </div>
+  
+      <!-- General View Table -->
+      <h3 class="text-xl font-semibold text-blue-800 mb-3 mt-12">General View — for Operational Oversight</h3>
+      <p class="text-lg text-gray-700 mb-4">
+        Replaces fragmented Excel summaries with a unified, visual view of performance by route, machine type, and sales tier.
+      </p>
+  
+      <div class="overflow-x-auto rounded-xl border border-blue-200 shadow-md mb-12">
+        <table class="min-w-full text-left text-gray-700 text-base">
+          <thead class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 text-blue-900 uppercase tracking-wider text-sm">
+            <tr>
+              <th class="px-6 py-4 border-b border-blue-200 rounded-tl-xl">Feature</th>
+              <th class="px-6 py-4 border-b border-blue-200 rounded-tr-xl">Description</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">ArcGIS Map</td>
+              <td class="px-6 py-4">Displays machine locations, colour-coded by route for spatial comparison</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">KPI Panels</td>
+              <td class="px-6 py-4">Shows total sales, average sales, and total servicing time at a glance</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Filter Controls</td>
+              <td class="px-6 py-4">Enables dynamic exploration by machine type, route, or sales tier</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Route Summary Table</td>
+              <td class="px-6 py-4">Lists machine count, refill effort, and average sales by type</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Box & Bar Plots</td>
+              <td class="px-6 py-4">Highlights top-performing machine types and sales distribution across tiers</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Cost-Effort Analysis</td>
+              <td class="px-6 py-4">Visualises servicing time against sales to identify low-ROI clusters</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- Route Analysis Table -->
+      <h3 class="text-xl font-semibold text-blue-800 mb-3">Route Analysis — for Simulated Planning of Routes</h3>
+      <p class="text-lg text-gray-700 mb-4">
+        Focused on testing new clustering strategies and evaluating their business impact.
+      </p>
+  
+      <div class="overflow-x-auto rounded-xl border border-blue-200 shadow-md mb-12">
+        <table class="min-w-full text-left text-gray-700 text-base">
+          <thead class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 text-blue-900 uppercase tracking-wider text-sm">
+            <tr>
+              <th class="px-6 py-4 border-b border-blue-200 rounded-tl-xl">Feature</th>
+              <th class="px-6 py-4 border-b border-blue-200 rounded-tr-xl">Description</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Scenario Slicers</td>
+              <td class="px-6 py-4">Simulate new route structures and tier distributions for planning flexibility</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Forecast Cards</td>
+              <td class="px-6 py-4">Display projected profit, servicing time, cost, and ROI across simulated scenarios</td>
+            </tr>
+            <tr class="hover:bg-yellow-50 transition">
+              <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Comparative Bar Charts</td>
+              <td class="px-6 py-4">Visualize actual vs. simulated performance by machine type for easy benchmarking</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- End of #powerbi-implementation -->
+  </div> <!-- ✅ End of #powerbi -->  
+    
+        <!-- Schedule Generator -->
+<div id="scheduling" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">Schedule Generator</h2>
+  
+    <p class="text-lg text-gray-700 mb-4">
+      Servicemen at Yeo’s were responsible for restocking vending machines across their assigned clusters.
+    </p>
+  
+    <p class="text-lg text-gray-700 mb-4">
+      While they were familiar with their routes, daily planning was:
+    </p>
+  
+    <!-- Emoji Bullet Points -->
+    <ul class="list-disc text-lg text-gray-700 space-y-2 mb-6 ml-4">
+      <li><span class="font-medium">Entirely manual</span></li>
+      <li><span class="font-medium">Time-consuming</span></li>
+      <li><span class="font-medium">Physically taxing</span> — especially in environments like schools, where servicemen navigated multiple floors and made repeated trips between the vending machines and their truck.</li>
+    </ul>
+  
+    <p class="text-lg text-gray-700 mb-4">
+      To ease this operational burden, we built a <span class="font-medium">Python-based linear optimiser</span> using PuLP that generates a <span class="font-medium">25-day rotating schedule</span> per cluster — intelligently accounting for:
+    </p>
+
+    <ul class="list-disc text-lg text-gray-700 space-y-2 mb-6 ml-4">
+        <li> <span class="font-medium">Machine priority (based on sales tiers)</span></li>
+        <li> <span class="font-medium">Accessibility tags (e.g., “School”, “Remote”)</span></li>
+        <li> <span class="font-medium">Estimated servicing effort and time constraints</span></li>
+      </ul>
+      <img src="assets/yeos-generator.png" alt="Yeo's Vending Machine Drinks" class="rounded-xl shadow-md w-full max-w-3xl mx-auto mb-6">
+  <p class="text-sm text-gray-500 italic text-center mb-8">
+    Excel schedule generated by the algorithm, confidential data has been censored
+  </p>
+    <!-- Optimisation Logic Table -->
+    <h3 class="text-xl font-semibold text-blue-800 mb-3 mt-12"> Optimisation Logic</h3>
+  
+    <div class="overflow-x-auto rounded-xl border border-blue-200 shadow-md mb-12">
+      <table class="min-w-full text-left text-gray-700 text-base">
+        <thead class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-100 text-blue-900 uppercase tracking-wider text-sm">
+          <tr>
+            <th class="px-6 py-4 border-b border-blue-200 rounded-tl-xl">Feature</th>
+            <th class="px-6 py-4 border-b border-blue-200 rounded-tr-xl">Logic</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-blue-50 transition">
+            <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Sales-Based Prioritisation</td>
+            <td class="px-6 py-4">Machines were grouped into High, Medium, and Low sales tiers — each assigned different visit frequencies</td>
+          </tr>
+          <tr class="hover:bg-blue-50 transition">
+            <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Accessibility Tagging</td>
+            <td class="px-6 py-4">Location tags like School, Remote, or City Centre influenced estimated servicing effort per machine</td>
+          </tr>
+          <tr class="hover:bg-blue-50 transition">
+            <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Daily Workload Limits</td>
+            <td class="px-6 py-4">Each day's schedule capped by machine count or time budget to prevent fatigue</td>
+          </tr>
+          <tr class="hover:bg-blue-50 transition">
+            <td class="px-6 py-4 font-medium text-gray-900 border-r border-blue-200">Even Visit Distribution</td>
+            <td class="px-6 py-4">Visit frequency was spaced evenly across the month to avoid front/backloading</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <p class="text-lg text-gray-700">
+        The schedule generator transformed manual planning into a structured, optimised workflow — reducing servicemen’s burden while enabling managers to compare costs and improve efficiency across clusters.
+    </p>
+  </div> 
+  
+        <!-- Impact -->
+<div id="challenges" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-6 text-left">Impact</h2>
+  
+    <!-- Image & Caption -->
+    <div class="flex flex-col items-center">
+      <img src="assets/yeos-final-ppt.jpg" alt="Yeo's Final Showcase" class="rounded-xl shadow-lg w-full max-w-4xl mb-4">
+      <p class="text-sm text-gray-500 italic mb-10 text-center">Final showcase of our project</p>
+    </div>
+  
+    <!-- Impact Description -->
+    <div class="max-w-4xl mx-auto">
+        <p class="text-lg text-gray-700 leading-relaxed">
+            This project empowered Yeo’s to move from intuition-based operations to <strong>data-driven route optimisation</strong> — enabling clearer decision-making, fairer workload distribution, and smarter use of servicing resources.
+          </p>
+          
+          <p class="text-lg text-gray-700 leading-relaxed mt-4">
+            From high-level dashboards to daily schedules, every layer of the solution was designed to improve transparency, operational efficiency, and long-term scalability.
+          </p>
+    </div>
+  </div>
+  
+
+        <!-- Learnings -->
+        <div id="learnings">
+          <h2 class="text-2xl font-semibold text-blue-900 mb-4">Learnings </h2>
+          <p class="text-lg text-gray-700 mb-4">
+            While I focused primarily on designing and building the Power BI dashboard, revisiting it later — with feedback from my professors and industry mentors — revealed a key lesson:
+          </p>
+        
+          <p class="text-lg text-gray-700 mb-4">
+            I should have invested more time upfront in low-fidelity prototyping to plan the layout, prioritise information flow, and reduce visual clutter.
+          </p>
+        
+          <p class="text-lg text-gray-700 mb-4">
+            Initially, I was too focused on maximising screen space, which led to including charts that didn’t meaningfully support the narrative. This made the dashboard harder to digest and required multiple iterations to refine.
+          </p>
+        
+          <p class="text-lg text-gray-700 mb-4">
+            If I were to redo the project, I would begin with a lo-fi wireframe focused on:
+          </p>
+        
+          <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-6">
+            <li>Clear visual hierarchy</li>
+            <li>Primary KPIs front and center</li>
+            <li>Supporting charts only where they drive decision-making</li>
+            <li>Grouped filters and controls for easier usability</li>
+          </ul>
+        
+          <p class="text-lg text-gray-700">
+            This approach would have saved time, improved storytelling, and made the dashboard more intuitive from the start.
+          </p>
+        </div>
+
+        <!-- Future Work -->
+<div id="future-work" class="mt-16">
+    <h2 class="text-2xl font-semibold text-blue-900 mb-4">Future Work</h2>
+  
+    <p class="text-lg text-gray-700 mb-6">
+      While our current solution successfully streamlined planning, scheduling, and performance reporting, there are several directions we would have explored further with more time and resources:
+    </p>
+  
+    <!-- Mobile Access -->
+    <div class="mb-8">
+      <h3 class="text-lg font-semibold text-blue-800 mb-2">Mobile Access for Servicemen</h3>
+      <p class="text-lg text-gray-700 mb-2">
+        Convert the Excel-based schedules into a mobile-accessible app or web interface, allowing servicemen to:
+      </p>
+      <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 mb-2">
+        <li>View their daily schedule on the go</li>
+        <li>Check off completed machines in real time</li>
+        <li>Submit feedback on accessibility or machine status</li>
+      </ul>
+      <p class="text-lg text-gray-700">
+        This would improve day-to-day usability and create a tighter feedback loop between ground operations and the scheduling system.
+      </p>
+    </div>
+  
+    <!-- Dynamic Reassignment -->
+    <div>
+      <h3 class="text-lg font-semibold text-blue-800 mb-2"> Dynamic Route Reassignment with Traffic Awareness</h3>
+      <p class="text-lg text-gray-700 mb-2">
+        Extend the clustering and scheduling engine to handle dynamic rebalancing when:
+      </p>
+      <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 mb-2">
+        <li>A serviceman is unavailable (e.g., leave or emergency)</li>
+        <li>Sales volumes shift significantly over time</li>
+        <li>Traffic disruptions occur (e.g., road closures, accidents, or jams)</li>
+      </ul>
+      <p class="text-lg text-gray-700">
+        By integrating live traffic data, the system could automatically redirect servicemen to alternative machines — minimising idle time, improving efficiency, and keeping route execution adaptable to real-world conditions.
+      </p>
+    </div>
+      </section>
+    </div>
+  </div>
+  <script src="routeopti-motion.js" defer></script>
+
+</body>
+</html>
