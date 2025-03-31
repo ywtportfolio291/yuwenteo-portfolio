@@ -42,9 +42,11 @@
     </div>
   </nav>
 
-  <!-- Hero Banner -->
-  <div class="w-full h-80 bg-gradient-to-r from-green-200 via-yellow-100 to-green-200 flex items-center justify-center">
-    <span class="text-xl text-gray-500">[ Insert Hero Image or Banner ]</span>
+ <!-- Hero Banner with Lowered Image -->
+<div class="w-full px-6 md:px-8 flex justify-center mt-10">
+    <div class="w-full max-w-5xl rounded-2xl overflow-hidden shadow-md">
+      <img src="assets/yeos-header.jpg" alt="Yeos Header" class="w-full object-cover" />
+    </div>
   </div>
 
   <!-- Page Layout -->
@@ -61,7 +63,7 @@
           <a href="#scheduling" class="nav-link block hover:text-blue-900">Schedule Generator</a>
           <a href="#challenges" class="nav-link block hover:text-blue-900">Impact</a>
           <a href="#learnings" class="nav-link block hover:text-blue-900">Learnings </a>
-          <a href="#learnings" class="nav-link block hover:text-blue-900">Future Work</a>
+          <a href="#future-work" class="nav-link block hover:text-blue-900">Future Work</a>
         </nav>
       </aside>
 
@@ -477,12 +479,31 @@
       <p class="text-lg text-gray-700 mb-2">
         Convert the Excel-based schedules into a mobile-accessible app or web interface, allowing servicemen to:
       </p>
-      <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 mb-2">
+      <!-- Gradient Banner with Overlapping Image -->
+<div class="w-full flex justify-center mt-8">
+    <!-- Banner Container -->
+    <div class="relative w-full max-w-4xl rounded-xl overflow-hidden shadow-md">
+      <!-- Gradient Background -->
+      <div class="h-72 bg-gradient-to-r from-yellow-100 via-orange-100 to-yellow-50"></div>
+      
+       <!-- Overlapping Image -->
+    <img src="assets\yeos- application.png" 
+    alt="Yeo's Vending Machine Drinks"
+    class="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 w-[40%] max-w-xl z-10" />
+</div>
+</div>
+  
+  <!-- Caption -->
+  <p class="text-sm text-gray-500 italic text-center mt-2">
+    Mobile Application for Servicemen
+  </p>
+  
+      <ul class="list-disc list-inside text-lg text-gray-700 space-y-1 mt-2">
         <li>View their daily schedule on the go</li>
         <li>Check off completed machines in real time</li>
         <li>Submit feedback on accessibility or machine status</li>
       </ul>
-      <p class="text-lg text-gray-700">
+      <p class="text-lg text-gray-700 mt-2">
         This would improve day-to-day usability and create a tighter feedback loop between ground operations and the scheduling system.
       </p>
     </div>
@@ -502,9 +523,36 @@
         By integrating live traffic data, the system could automatically redirect servicemen to alternative machines — minimising idle time, improving efficiency, and keeping route execution adaptable to real-world conditions.
       </p>
     </div>
-      </section>
-    </div>
+    <!-- More Case Studies and Writings -->
+<div class="mt-20">
+  <h2 class="text-2xl font-semibold text-blue-900 mb-6 tracking-[-0.02em]">✴ More projects</h2>
+  <hr class="border-t border-gray-200 mb-10" />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- Case Study 1 -->
+    <a href="sutdetect.html" class="group block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="assets/sutdetect-header-more-projects.png" alt="Contractbook PDF Signing" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">SUTDetect ・ '25 HTX</h3>
+        <p class="text-gray-600 text-sm">Revolutionizing investigations with AI-powered eye-tracking for contactless object familiarity detection</p>
+      </div>
+    </a>
+
+    <!-- Case Study 2 -->
+    <a href="iliketomoviemovie.html" class="group block bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="assets/movie-main-screen.png" alt="Movie Simulation Game" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">I Like to Movie Movie!</h3>
+        <p class="text-gray-600 text-sm">Designed a cinema game that teaches real-world scheduling trade-offs through intuitive choices and live, risk-free simulation feedback.</p>
+      </div>
+    </a>
+
   </div>
+</div>
+
+
+
   <script src="routeopti-motion.js" defer></script>
 
 </body>
